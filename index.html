@@ -9,15 +9,17 @@
 </head>
 <body>
     <header>
-        <h1>Light Realty</h1>
-        <p>Votre partenaire immobilier de confiance</p>
+        <div class="container">
+            <h1>Light Realty</h1>
+            <p>Votre partenaire immobilier de confiance</p>
+        </div>
     </header>
 
     <section class="offers container">
         <h2>Nos Offres</h2>
-        <div class="offer">
+        <div class="offer-card">
             <img src="plantation.jpg" alt="Plantation de tecks" />
-            <div class="offer-details">
+            <div class="content">
                 <h3>Plantation de tecks à vendre</h3>
                 <p><strong>Localité :</strong> Kintikopé (Notsè)</p>
                 <p><strong>Superficie :</strong> 4 hectares</p>
@@ -27,7 +29,7 @@
                     <li>Idéal pour investisseurs ou passionnés de l'agriculture</li>
                 </ul>
                 <p><strong>Prix :</strong> 2 500 000 FCFA</p>
-                <p><strong>Contact :</strong> +228 92 47 00 75</p>
+                <a class="btn" href="tel:+22892470075">Nous contacter</a>
             </div>
         </div>
     </section>
@@ -35,23 +37,19 @@
     <section class="contact container">
         <h2>Contactez-nous</h2>
         <form action="mailto:lightrealty@example.com" method="post" enctype="text/plain">
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="name" required />
-
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="message">Message :</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit">Envoyer</button>
+            <input type="text" name="name" placeholder="Nom" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <textarea name="message" rows="4" placeholder="Votre message..." required></textarea>
+            <button type="submit" class="btn">Envoyer</button>
         </form>
-        <div class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.9232498443876!2d1.1918023740559854!3d6.185879127707088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x102158442fe58c45%3A0x39d60a89e73c4dc2!2sBe-Kpota!5e0!3m2!1sfr!2stg!4v1682345678910!5m2!1sfr!2stg"
-                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-            </iframe>
-        </div>
+    </section>
+
+    <section class="map container">
+        <h2>Notre localisation</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.9232498443876!2d1.1918023740559854!3d6.185879127707088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x102158442fe58c45%3A0x39d60a89e73c4dc2!2sBe-Kpota!5e0!3m2!1sfr!2stg!4v1682345678910!5m2!1sfr!2stg"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
     </section>
 
     <footer>
