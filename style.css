@@ -1,82 +1,81 @@
 
-* {
-    box-sizing: border-box;
-}
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
-    background: #f4f6f8;
-    color: #333;
+    padding: 0;
+    background: #f9f9f9;
 }
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-}
+
 header {
-    background: #002244;
-    color: white;
-    padding: 1em 0;
-}
-header h1 {
-    margin: 0;
-}
-nav {
-    margin-top: 0.5em;
-}
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
-.hero {
-    background: url('hero.jpg') no-repeat center center/cover;
-    padding: 5em 0;
-    color: white;
-    text-align: center;
-}
-.hero h2 {
-    font-size: 2.5em;
-    margin: 0 0 0.5em;
-}
-.offres {
-    padding: 2em 0;
-}
-.offre-card {
-    display: flex;
-    flex-wrap: wrap;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    overflow: hidden;
-    margin-top: 1.5em;
-}
-.offre-card img {
-    width: 100%;
-    max-width: 400px;
-    object-fit: cover;
-}
-.offre-content {
-    padding: 1em;
-    flex: 1;
-}
-.offre-content ul {
-    padding-left: 20px;
-}
-.btn {
-    display: inline-block;
-    margin-top: 1em;
-    padding: 10px 20px;
     background: #007acc;
     color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-footer {
-    background: #002244;
-    color: white;
+    padding: 2em;
     text-align: center;
-    padding: 1em 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 1em;
+}
+
+h2 {
+    color: #007acc;
+}
+
+.offer {
+    background: white;
+    margin: 1em 0;
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.offer img {
+    max-width: 250px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.offer-details {
+    flex: 1;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 1.5em 0;
+}
+
+.contact form input,
+.contact form textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact form button {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.map {
+    margin-top: 2em;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #eee;
     margin-top: 2em;
 }
