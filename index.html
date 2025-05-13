@@ -1,36 +1,79 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Light Realty - Accueil</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>Bienvenue chez Light Realty</h1>
-    <p>Votre partenaire immobilier de confiance au Togo.</p>
-  </header>
-  <main>
-    <section>
-      <h2>Nos biens récents</h2>
-      <p>Découvrez nos offres de vente, location, terrains et plus.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light Realty - Votre agence immobilière au Togo</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-xl font-bold text-gray-800">Light Realty</h1>
+        <ul class="flex space-x-4 text-sm font-semibold">
+          <li><a href="#biens" class="hover:text-yellow-600">Biens</a></li>
+          <li><a href="#services" class="hover:text-yellow-600">Services</a></li>
+          <li><a href="#contact" class="hover:text-yellow-600">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-yellow-500 text-white py-20 text-center">
+      <h2 class="text-4xl font-bold">Bienvenue chez Light Realty</h2>
+      <p class="mt-4 text-lg">L'immobilier en toute lumière au Togo</p>
+    </header>
+
+    <!-- Biens Récents -->
+    <section id="biens" class="py-12 px-6">
+      <div class="max-w-6xl mx-auto">
+        <h3 class="text-2xl font-bold mb-6">Nos biens récents</h3>
+        <div class="grid md:grid-cols-3 gap-6">
+          <img src="https://via.placeholder.com/300x200" class="rounded-lg" alt="Bien 1">
+          <img src="https://via.placeholder.com/300x200" class="rounded-lg" alt="Bien 2">
+          <img src="https://via.placeholder.com/300x200" class="rounded-lg" alt="Bien 3">
+        </div>
+      </div>
     </section>
-    <section>
-      <h2>Pourquoi nous choisir ?</h2>
-      <ul>
-        <li>Équipe professionnelle</li>
-        <li>Biens sélectionnés avec soin</li>
-        <li>Accompagnement complet</li>
-      </ul>
+
+    <!-- Pourquoi nous choisir -->
+    <section id="services" class="bg-white py-12 px-6">
+      <div class="max-w-4xl mx-auto">
+        <h3 class="text-2xl font-bold mb-4">Pourquoi nous choisir ?</h3>
+        <ul class="list-disc list-inside space-y-2">
+          <li>Conseil et accompagnement sur mesure</li>
+          <li>Biens fiables, documents vérifiés</li>
+          <li>Équipe réactive et expérimentée</li>
+        </ul>
+      </div>
     </section>
-    <section>
-      <h2>Contact</h2>
-      <p>Appelez-nous au +228 92 47 00 75 ou envoyez un message.</p>
+
+    <!-- Contact -->
+    <section id="contact" class="py-12 px-6">
+      <div class="max-w-2xl mx-auto">
+        <h3 class="text-2xl font-bold mb-6">Nous contacter</h3>
+        <p class="mb-4">Appelez-nous au <strong>+228 92 47 00 75</strong> ou utilisez le formulaire :</p>
+        <form class="space-y-4">
+          <input type="text" placeholder="Nom" class="w-full border p-2 rounded" required>
+          <input type="email" placeholder="Email" class="w-full border p-2 rounded" required>
+          <textarea rows="4" placeholder="Message" class="w-full border p-2 rounded" required></textarea>
+          <button type="submit" class="bg-yellow-500 text-white px-6 py-2 rounded hover:bg-yellow-600">Envoyer</button>
+        </form>
+      </div>
     </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 Light Realty - LIGHT Group SARL</p>
-  </footer>
-</body>
+
+    <!-- Carte Google Maps -->
+    <section class="py-12 px-6">
+      <div class="max-w-5xl mx-auto">
+        <h3 class="text-2xl font-bold mb-4">Nous localiser</h3>
+        <iframe class="w-full h-64 rounded shadow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1984.3459340984234!2d1.2075!3d6.1375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10215f6078!2sLomé%2C%20Togo!5e0!3m2!1sfr!2s!4v123456789"></iframe>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6 text-sm">
+      <p>© 2025 Light Realty - Une marque de <strong>LIGHT Group SARL</strong><br/>Suivez-nous : Facebook | Instagram | WhatsApp</p>
+    </footer>
+  </body>
 </html>
