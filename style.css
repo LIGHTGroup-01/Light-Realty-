@@ -1,80 +1,25 @@
-
-* {
-    box-sizing: border-box;
-}
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #f4f6f8;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  color: #333;
 }
 header {
-    background: linear-gradient(to right, #007acc, #005f99);
-    color: white;
-    padding: 2em 0;
-    text-align: center;
+  background: #000;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
 }
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 1em;
-}
-h2 {
-    margin-bottom: 0.5em;
-    border-left: 5px solid #007acc;
-    padding-left: 0.5em;
-}
-.offer-card {
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 2em;
-}
-.offer-card .swiper {
-    width: 100%;
-    max-width: 400px;
-}
-.offer-card img {
-    width: 100%;
-    display: block;
-}
-.offer-card .content {
-    flex: 1;
-    padding: 1.5em;
-}
-.offer-card ul {
-    padding-left: 1.2em;
-}
-.btn {
-    display: inline-block;
-    background: #007acc;
-    color: white;
-    text-decoration: none;
-    padding: 0.6em 1.2em;
-    margin-top: 1em;
-    border-radius: 5px;
-}
-.contact form {
-    background: white;
-    padding: 2em;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    display: grid;
-    gap: 1em;
-}
-.contact input,
-.contact textarea {
-    width: 100%;
-    padding: 0.75em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+main {
+  padding: 2rem;
 }
 footer {
-    background: #e5e5e5;
-    text-align: center;
-    padding: 1.2em;
-    margin-top: 3em;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
