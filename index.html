@@ -3,70 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Light Realty - Votre agence immobilière au Togo</title>
+    <title>Light Realty - L'immobilier en toute lumière</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/forms@0.3.4/dist/forms.min.js"></script>
   </head>
-  <body class="bg-gray-100 text-gray-800">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-md p-4">
-      <div class="container mx-auto flex justify-between items-center">
-        <h1 class="text-xl font-bold text-gray-800">Light Realty</h1>
-        <ul class="flex space-x-4 text-sm font-semibold">
-          <li><a href="#biens" class="hover:text-yellow-600">Biens</a></li>
-          <li><a href="#services" class="hover:text-yellow-600">Services</a></li>
-          <li><a href="#contact" class="hover:text-yellow-600">Contact</a></li>
+  <body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- Navbar -->
+    <nav class="bg-white shadow fixed top-0 w-full z-50">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-yellow-600">Light Realty</h1>
+        <ul class="hidden md:flex space-x-6 font-medium">
+          <li><a href="#biens" class="hover:text-yellow-500 transition">Biens</a></li>
+          <li><a href="#services" class="hover:text-yellow-500 transition">Services</a></li>
+          <li><a href="#contact" class="hover:text-yellow-500 transition">Contact</a></li>
         </ul>
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="bg-yellow-500 text-white py-20 text-center">
-      <h2 class="text-4xl font-bold">Bienvenue chez Light Realty</h2>
-      <p class="mt-4 text-lg">L'immobilier en toute lumière au Togo</p>
-    </header>
+    <!-- Hero -->
+    <section class="bg-yellow-500 text-white h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
+      <h2 class="text-5xl font-extrabold mb-4">Trouvez la maison de vos rêves</h2>
+      <p class="text-xl mb-6">Light Realty vous accompagne dans tous vos projets immobiliers au Togo</p>
+      <a href="#biens" class="bg-white text-yellow-600 px-6 py-3 font-bold rounded hover:bg-yellow-100 transition">Voir les offres</a>
+    </section>
 
-    <!-- Biens Récents -->
-    <section id="biens" class="py-12 px-6">
+    <!-- Nos biens -->
+    <section id="biens" class="py-16 bg-white px-6">
       <div class="max-w-6xl mx-auto">
-        <h3 class="text-2xl font-bold mb-6">Nos biens récents</h3>
-        <div class="grid md:grid-cols-3 gap-6">
-          <img src="https://via.placeholder.com/300x200" class="rounded-lg" alt="Bien 1">
-          <img src="https://via.placeholder.com/300x200" class="rounded-lg" alt="Bien 2">
-          <img src="https://via.placeholder.com/300x200" class="rounded-lg" alt="Bien 3">
+        <h3 class="text-3xl font-bold text-center mb-12">Biens récents</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-gray-100 p-4 rounded shadow hover:shadow-lg transition">
+            <img src="https://via.placeholder.com/400x250" class="rounded mb-4" alt="Maison 1" />
+            <h4 class="font-bold text-lg">Villa moderne à Lomé</h4>
+            <p class="text-sm mt-2">4 chambres, piscine, quartier résidentiel</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded shadow hover:shadow-lg transition">
+            <img src="https://via.placeholder.com/400x250" class="rounded mb-4" alt="Maison 2" />
+            <h4 class="font-bold text-lg">Appartement centre-ville</h4>
+            <p class="text-sm mt-2">2 chambres, proche des commodités</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded shadow hover:shadow-lg transition">
+            <img src="https://via.placeholder.com/400x250" class="rounded mb-4" alt="Maison 3" />
+            <h4 class="font-bold text-lg">Terrain à vendre</h4>
+            <p class="text-sm mt-2">600 m² viabilisé à Agoè</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Pourquoi nous choisir -->
-    <section id="services" class="bg-white py-12 px-6">
-      <div class="max-w-4xl mx-auto">
-        <h3 class="text-2xl font-bold mb-4">Pourquoi nous choisir ?</h3>
-        <ul class="list-disc list-inside space-y-2">
-          <li>Conseil et accompagnement sur mesure</li>
-          <li>Biens fiables, documents vérifiés</li>
-          <li>Équipe réactive et expérimentée</li>
-        </ul>
+    <!-- Pourquoi Light Realty -->
+    <section id="services" class="py-16 bg-gray-50 px-6">
+      <div class="max-w-5xl mx-auto text-center">
+        <h3 class="text-3xl font-bold mb-6">Pourquoi nous choisir ?</h3>
+        <div class="grid md:grid-cols-3 gap-8 mt-10">
+          <div>
+            <h4 class="font-semibold text-yellow-600 text-lg mb-2">Professionnalisme</h4>
+            <p class="text-sm">Nos agents vous accompagnent avec transparence et expertise.</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-yellow-600 text-lg mb-2">Fiabilité</h4>
+            <p class="text-sm">Nous vérifions tous les documents et titres fonciers.</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-yellow-600 text-lg mb-2">Disponibilité</h4>
+            <p class="text-sm">Une équipe toujours joignable et prête à vous servir.</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="py-12 px-6">
+    <section id="contact" class="py-16 px-6 bg-white">
       <div class="max-w-2xl mx-auto">
-        <h3 class="text-2xl font-bold mb-6">Nous contacter</h3>
-        <p class="mb-4">Appelez-nous au <strong>+228 92 47 00 75</strong> ou utilisez le formulaire :</p>
+        <h3 class="text-3xl font-bold text-center mb-10">Contactez-nous</h3>
         <form class="space-y-4">
-          <input type="text" placeholder="Nom" class="w-full border p-2 rounded" required>
-          <input type="email" placeholder="Email" class="w-full border p-2 rounded" required>
-          <textarea rows="4" placeholder="Message" class="w-full border p-2 rounded" required></textarea>
-          <button type="submit" class="bg-yellow-500 text-white px-6 py-2 rounded hover:bg-yellow-600">Envoyer</button>
+          <input type="text" placeholder="Votre nom" class="w-full border border-gray-300 p-3 rounded" required />
+          <input type="email" placeholder="Votre email" class="w-full border border-gray-300 p-3 rounded" required />
+          <textarea rows="4" placeholder="Votre message" class="w-full border border-gray-300 p-3 rounded" required></textarea>
+          <button type="submit" class="w-full bg-yellow-500 text-white font-bold py-3 rounded hover:bg-yellow-600 transition">Envoyer</button>
         </form>
       </div>
     </section>
 
-    <!-- Carte Google Maps -->
-    <section class="py-12 px-6">
-      <div class="max-w-5xl mx-auto">
-        <h3 class="text-2xl font-bold mb-4">Nous localiser</h3>
+    <!-- Map -->
+    <section class="bg-gray-100 py-12">
+      <div class="max-w-5xl mx-auto px-6">
+        <h3 class="text-2xl font-bold text-center mb-6">Nous localiser</h3>
         <iframe class="w-full h-64 rounded shadow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1984.3459340984234!2d1.2075!3d6.1375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10215f6078!2sLomé%2C%20Togo!5e0!3m2!1sfr!2s!4v123456789"></iframe>
       </div>
     </section>
