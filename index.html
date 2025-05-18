@@ -1,185 +1,31 @@
+
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Light Realty - L'immobilier en toute lumière</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/forms@0.3.4/dist/forms.min.js"></script>
-  
-  <!-- Meta SEO -->
-  <meta name="description" content="Achetez, louez ou vendez vos biens immobiliers au Togo avec Light Realty. Nous vous accompagnons dans toutes vos démarches.">
-  <meta property="og:title" content="Light Realty - Immobilier au Togo" />
-  <meta property="og:description" content="Plantations de tecks, terrains, maisons à vendre. Light Realty, une marque de LIGHT Group SARL." />
-  <meta property="og:image" content="https://lightgroup-01.github.io/Light-Realty-/images/banner.jpg" />
-  <meta property="og:url" content="https://lightgroup-01.github.io/Light-Realty-/" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- AOS & Font Awesome -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <script src="https://kit.fontawesome.com/a2e0e6b8c1.js" crossorigin="anonymous"></script>
-
-  <style>
-    .whatsapp-float {
-      position: fixed;
-      width: 60px;
-      height: 60px;
-      bottom: 40px;
-      right: 20px;
-      background-color: #25d366;
-      color: #fff;
-      border-radius: 50px;
-      text-align: center;
-      font-size: 30px;
-      z-index: 100;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .whatsapp-float:hover {
-      background-color: #128c7e;
-    }
-  </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Realty - Vente de Tecks</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #fff8dc; margin: 0; padding: 0; }
+        .container { padding: 20px; max-width: 800px; margin: auto; background-color: #fffbe6; border-radius: 10px; }
+        h1 { color: #006400; }
+        .price { color: red; font-weight: bold; font-size: 1.2em; }
+        .btn { background-color: #25d366; color: white; padding: 15px 25px; text-align: center;
+               display: inline-block; font-size: 16px; margin-top: 20px; border-radius: 5px; text-decoration: none; }
+    </style>
 </head>
-  <body class="bg-gray-50 text-gray-800 font-sans">
-    <!-- Navbar -->
-    <nav class="bg-white shadow fixed top-0 w-full z-50">
-      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 class="text-2xl font-bold text-yellow-600">Light Realty</h1>
-        <ul class="hidden md:flex space-x-6 font-medium">
-          <li><a href="#biens" class="hover:text-yellow-500 transition">Biens</a></li>
-          <li><a href="#services" class="hover:text-yellow-500 transition">Services</a></li>
-          <li><a href="#contact" class="hover:text-yellow-500 transition">Contact</a></li>
+<body>
+    <div class="container">
+        <h1>🌳 À VENDRE : Magnifiques Plantations de Tecks à Kintikopé (Notsè) 🌳</h1>
+        <p>Nous mettons en vente de belles plantations de tecks s’étendant sur plusieurs hectares, situées dans la localité de Kintikopé, près de Notsè.</p>
+        <ul>
+            <li>✔️ Plantation mature avec un excellent rendement</li>
+            <li>✔️ Sol fertile, bien entretenu</li>
+            <li>✔️ Idéal pour investisseurs ou passionnés d’agriculture</li>
         </ul>
-      </div>
-    </nav>
-
-    <!-- Hero -->
-    <section class="bg-yellow-500 text-white h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
-      <h2 class="text-5xl font-extrabold mb-4">Trouvez la maison de vos rêves</h2>
-      <p class="text-xl mb-6">Light Realty vous accompagne dans tous vos projets immobiliers au Togo</p>
-      <a href="#biens" class="bg-white text-yellow-600 px-6 py-3 font-bold rounded hover:bg-yellow-100 transition">Voir les offres</a>
-    </section>
-
-    <!-- Nos biens -->
-    <section id="biens" class="py-16 bg-white px-6">
-      <div class="max-w-6xl mx-auto">
-        <h3 class="text-3xl font-bold text-center mb-12">Biens récents</h3>
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="bg-gray-100 p-4 rounded shadow hover:shadow-lg transition">
-            <img src="https://via.placeholder.com/400x250" class="rounded mb-4" alt="Maison 1" />
-            <h4 class="font-bold text-lg">Villa moderne à Lomé</h4>
-            <p class="text-sm mt-2">4 chambres, piscine, quartier résidentiel</p>
-          </div>
-          <div class="bg-gray-100 p-4 rounded shadow hover:shadow-lg transition">
-            <img src="https://via.placeholder.com/400x250" class="rounded mb-4" alt="Maison 2" />
-            <h4 class="font-bold text-lg">Appartement centre-ville</h4>
-            <p class="text-sm mt-2">2 chambres, proche des commodités</p>
-          </div>
-          <div class="bg-gray-100 p-4 rounded shadow hover:shadow-lg transition">
-            <img src="https://via.placeholder.com/400x250" class="rounded mb-4" alt="Maison 3" />
-            <h4 class="font-bold text-lg">Terrain à vendre</h4>
-            <p class="text-sm mt-2">600 m² viabilisé à Agoè</p>
-          </div>
-        </div>
-      </div>
-    </section>
-<!-- Annonce spéciale -->
-<section class="py-12 bg-yellow-100 px-6">
-  <div class="max-w-4xl mx-auto text-center">
-    <h3 class="text-2xl font-bold text-green-900 mb-4">🌳 À VENDRE : Magnifiques Plantations de Tecks à Kintikopé (Notsè) 🌳</h3>
-    <p class="text-gray-800 leading-relaxed">
-      Nous mettons en vente de belles plantations de tecks s’étendant sur plusieurs hectares, situées dans la localité de Kintikopé, près de Notsè.
-    </p>
-    <ul class="text-left text-gray-700 mt-4 list-disc list-inside">
-      <li><strong>✔️</strong> Plantation mature avec un excellent rendement</li>
-      <li><strong>✔️</strong> Sol fertile, bien entretenu</li>
-      <li><strong>✔️</strong> Idéal pour investisseurs ou passionnés d’agriculture</li>
-    </ul>
-    <p class="mt-4 font-semibold text-lg text-red-700">💰 Prix : 1 500 000 FCFA par hectare</p>
-    <p class="text-gray-800">📞 Contact : <a href="tel:+22892470075" class="text-blue-700 underline">+228 92 47 00 75</a></p>
-    <a href="https://wa.me/22892470075?text=Bonjour%2C%20je%20souhaite%20obtenir%20plus%20d'informations%20sur%20les%20plantations%20de%20tecks%20%C3%A0%20Kintikop%C3%A9." 
-       class="mt-4 inline-block bg-green-700 text-white px-6 py-3 rounded hover:bg-green-800 transition">Contacter sur WhatsApp</a>
-  </div>
-</section>
-
-
-    <!-- Pourquoi Light Realty -->
-    <section id="services" class="py-16 bg-gray-50 px-6">
-      <div class="max-w-5xl mx-auto text-center">
-        <h3 class="text-3xl font-bold mb-6">Pourquoi nous choisir ?</h3>
-        <div class="grid md:grid-cols-3 gap-8 mt-10">
-          <div>
-            <h4 class="font-semibold text-yellow-600 text-lg mb-2">Professionnalisme</h4>
-            <p class="text-sm">Nos agents vous accompagnent avec transparence et expertise.</p>
-          </div>
-          <div>
-            <h4 class="font-semibold text-yellow-600 text-lg mb-2">Fiabilité</h4>
-            <p class="text-sm">Nous vérifions tous les documents et titres fonciers.</p>
-          </div>
-          <div>
-            <h4 class="font-semibold text-yellow-600 text-lg mb-2">Disponibilité</h4>
-            <p class="text-sm">Une équipe toujours joignable et prête à vous servir.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="py-16 px-6 bg-white">
-      <div class="max-w-2xl mx-auto">
-        <h3 class="text-3xl font-bold text-center mb-10">Contactez-nous</h3>
-        <form class="space-y-4">
-          <input type="text" placeholder="Votre nom" class="w-full border border-gray-300 p-3 rounded" required />
-          <input type="email" placeholder="Votre email" class="w-full border border-gray-300 p-3 rounded" required />
-          <textarea rows="4" placeholder="Votre message" class="w-full border border-gray-300 p-3 rounded" required></textarea>
-          <button type="submit" class="w-full bg-yellow-500 text-white font-bold py-3 rounded hover:bg-yellow-600 transition">Envoyer</button>
-        </form>
-<div id='map' class='mt-8 w-full h-64 rounded shadow'></div>
-      </div>
-    </section>
-
-    <!-- Map -->
-    <section class="bg-gray-100 py-12">
-      <div class="max-w-5xl mx-auto px-6">
-        <h3 class="text-2xl font-bold text-center mb-6">Nous localiser</h3>
-        <iframe class="w-full h-64 rounded shadow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1984.3459340984234!2d1.2075!3d6.1375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10215f6078!2sLomé%2C%20Togo!5e0!3m2!1sfr!2s!4v123456789"></iframe>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white text-center py-6 text-sm">
-      <p>© 2025 Light Realty - Une marque de <strong>LIGHT Group SARL</strong><br/>
-    Suivez-nous : 
-    <a href="https://facebook.com" class="underline hover:text-yellow-400">Facebook</a> | 
-    <a href="https://instagram.com" class="underline hover:text-yellow-400">Instagram</a> | 
-    <a href="https://wa.me/22892470075?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%28e%29%20par%20vos%20services%20immobiliers%20chez%20Light%20Realty." 
-       class="underline hover:text-yellow-400">WhatsApp</a></p>
-    </footer>
-  
-  <!-- AOS Animation Init -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/22892470075?text=Bonjour%2C%20je%20souhaite%20obtenir%20des%20informations%20sur%20vos%20services%20immobiliers." 
-     class="whatsapp-float" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-
-  <!-- Google Maps -->
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-PLACEHOLDERKEY&callback=initMap"></script>
-  <script>
-    function initMap() {
-      const location = { lat: 6.95, lng: 1.15 };
-      const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 12,
-        center: location,
-      });
-      new google.maps.Marker({ position: location, map: map });
-    }
-  </script>
+        <p class="price">💰 Prix : 2 500 000 FCFA par hectare</p>
+        <p>📞 Contact : <a href="tel:+22892470075">+228 92 47 00 75</a></p>
+        <a class="btn" href="https://wa.me/22892470075?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20vos%20plantations%20de%20tecks%20%C3%A0%20Kintikop%C3%A9.%20Pouvez-vous%20me%20donner%20plus%20d'informations%20%3F" target="_blank">Contacter sur WhatsApp</a>
+    </div>
 </body>
 </html>
