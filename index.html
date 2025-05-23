@@ -6,24 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Light Realty</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f2f2f2; color: #333; }
-        header { background: #222; color: white; padding: 20px; text-align: center; }
-        section { padding: 20px; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; }
+        header, footer { background: #222; color: white; padding: 20px 0; text-align: center; }
+        nav { background: #444; display: flex; justify-content: center; }
+        nav a { color: white; text-decoration: none; padding: 15px 20px; display: block; }
+        nav a:hover { background: #666; }
+        section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+        h2 { color: #1a1a1a; }
         .annonce { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px #ccc; margin-top: 20px; }
         .btn-whatsapp { display: inline-block; background: #25D366; color: white; padding: 12px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; margin-top: 10px; }
-        footer { text-align: center; padding: 10px; background: #222; color: white; margin-top: 30px; }
+        .contact { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px #ccc; }
     </style>
 </head>
 <body>
     <header>
         <h1>Bienvenue chez Light Realty</h1>
-        <p>Votre partenaire immobilier de confiance</p>
+        <p>Votre partenaire immobilier de confiance au Togo</p>
     </header>
-    <section>
-        <h2>Annonce en vedette</h2>
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#apropos">À propos</a>
+        <a href="#annonces">Annonces</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="accueil">
+        <h2>Accueil</h2>
+        <p>Light Realty est une division de LIGHT Group spécialisée dans l’immobilier, l’achat, la vente, la location et la promotion de biens fonciers et immobiliers.</p>
+    </section>
+
+    <section id="apropos">
+        <h2>À propos</h2>
+        <p>Notre mission est d'offrir des services immobiliers fiables, transparents et accessibles. Avec Light Realty, vous avez l’assurance d’un accompagnement professionnel, de la recherche de terrains à la signature de vos documents.</p>
+    </section>
+
+    <section id="annonces">
+        <h2>Nos annonces</h2>
         <div class="annonce">
-            <h3>À VENDRE : Magnifiques Plantations de Tecks à Kintikopé (Notsè)</h3>
-            <p>Nous mettons en vente de belles plantations de tecks s’étendant sur plusieurs hectares, situées dans la localité de Kintikopé, près de Notsè.</p>
+            <h3>À VENDRE : Plantations de Tecks à Kintikopé (Notsè)</h3>
+            <p>De belles plantations de tecks s’étendant sur plusieurs hectares, situées dans la localité de Kintikopé, près de Notsè.</p>
             <ul>
                 <li>✔️ Plantation mature avec un excellent rendement</li>
                 <li>✔️ Sol fertile, bien entretenu</li>
@@ -31,11 +52,21 @@
             </ul>
             <p><strong>Prix : 2 500 000 FCFA par hectare</strong></p>
             <p><strong>Contact : +228 92 47 00 75</strong></p>
-            <a class="btn-whatsapp" href="https://wa.me/22892470075?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20les%20plantations%20de%20tecks%20%C3%A0%20Kintikop%C3%A9.%20Merci%20de%20me%20donner%20plus%20d'informations." target="_blank">Nous contacter sur WhatsApp</a>
+            <a class="btn-whatsapp" href="https://wa.me/22892470075?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20les%20plantations%20de%20tecks%20%C3%A0%20Kintikop%C3%A9.%20Merci%20de%20me%20donner%20plus%20d'informations." target="_blank">Contactez-nous sur WhatsApp</a>
         </div>
     </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact">
+            <p><strong>Téléphone :</strong> +228 92 47 00 75</p>
+            <p><strong>Email :</strong> lightgroup.tg@gmail.com</p>
+            <p><strong>WhatsApp :</strong> <a href="https://wa.me/22892470075" target="_blank">Discuter</a></p>
+        </div>
+    </section>
+
     <footer>
-        &copy; 2025 Light Realty - Tous droits réservés.
+        &copy; 2025 Light Realty – Une division de LIGHT Group. Tous droits réservés.
     </footer>
 </body>
 </html>
