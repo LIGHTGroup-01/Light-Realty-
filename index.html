@@ -2,145 +2,40 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Light Realty - Tecks à vendre</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f9fafb;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(135deg, #004d40, #00796b);
-      color: white;
-      padding: 40px 0;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-    header h1 {
-      font-size: 2.5rem;
-    }
-    header p {
-      font-size: 1.1rem;
-      margin-top: 10px;
-    }
-    nav {
-      background-color: #004d40;
-      text-align: center;
-      padding: 15px 0;
-    }
-    nav a {
-      color: white;
-      margin: 0 20px;
-      text-decoration: none;
-      font-size: 1rem;
-      transition: opacity 0.3s ease;
-    }
-    nav a:hover {
-      opacity: 0.7;
-    }
-    .container {
-      max-width: 960px;
-      margin: 40px auto;
-      padding: 30px;
-      background: white;
-      border-radius: 15px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-      animation: fadeIn 1s ease-in-out;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    h2 {
-      font-size: 1.8rem;
-      color: #00695c;
-      margin-bottom: 20px;
-    }
-    .features {
-      list-style: none;
-      margin-bottom: 25px;
-    }
-    .features li {
-      margin-bottom: 12px;
-      padding-left: 28px;
-      position: relative;
-    }
-    .features li::before {
-      content: "✓";
-      position: absolute;
-      left: 0;
-      color: #43a047;
-      font-weight: bold;
-    }
-    .price {
-      font-size: 1.2rem;
-      color: #d32f2f;
-      margin-bottom: 10px;
-    }
-    .contact {
-      font-size: 1.1rem;
-      margin-bottom: 25px;
-    }
-    .whatsapp-btn {
-      display: inline-block;
-      background-color: #25d366;
-      color: white;
-      padding: 12px 30px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: background-color 0.3s ease;
-    }
-    .whatsapp-btn:hover {
-      background-color: #1ebe57;
-    }
-    footer {
-      text-align: center;
-      background: #004d40;
-      color: white;
-      padding: 20px 0;
-      margin-top: 40px;
-      font-size: 0.9rem;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Light Realty</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f2f2f2; color: #333; }
+        header { background: #222; color: white; padding: 20px; text-align: center; }
+        section { padding: 20px; }
+        .annonce { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px #ccc; margin-top: 20px; }
+        .btn-whatsapp { display: inline-block; background: #25D366; color: white; padding: 12px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; margin-top: 10px; }
+        footer { text-align: center; padding: 10px; background: #222; color: white; margin-top: 30px; }
+    </style>
 </head>
 <body>
-
-<header>
-  <h1>Light Realty</h1>
-  <p>Votre lumière, nos services immobiliers</p>
-</header>
-
-<nav>
-  <a href="#">Accueil</a>
-  <a href="#">Nos Services</a>
-  <a href="#">Annonces</a>
-  <a href="#">Contact</a>
-</nav>
-
-<main class="container">
-  <h2>🌳 À VENDRE : Plantations de Tecks à Kintikopé (Notsè)</h2>
-  <ul class="features">
-    <li>Plantation mature avec excellent rendement</li>
-    <li>Sol fertile, bien entretenu</li>
-    <li>Idéal pour investisseurs ou passionnés d’agriculture</li>
-  </ul>
-  <p class="price">💰 Prix : 2 500 000 FCFA par hectare</p>
-  <p class="contact">📞 Contact : +228 92 47 00 75</p>
-  <a class="whatsapp-btn" href="https://wa.me/22892470075?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20vos%20plantations%20de%20tecks%20%C3%A0%20Kintikop%C3%A9.%20Pouvez-vous%20me%20donner%20plus%20d'informations%20%3F" target="_blank">Écrivez-nous sur WhatsApp</a>
-</main>
-
-<footer>
-  &copy; 2025 Light Realty. Tous droits réservés.
-</footer>
-
+    <header>
+        <h1>Bienvenue chez Light Realty</h1>
+        <p>Votre partenaire immobilier de confiance</p>
+    </header>
+    <section>
+        <h2>Annonce en vedette</h2>
+        <div class="annonce">
+            <h3>À VENDRE : Magnifiques Plantations de Tecks à Kintikopé (Notsè)</h3>
+            <p>Nous mettons en vente de belles plantations de tecks s’étendant sur plusieurs hectares, situées dans la localité de Kintikopé, près de Notsè.</p>
+            <ul>
+                <li>✔️ Plantation mature avec un excellent rendement</li>
+                <li>✔️ Sol fertile, bien entretenu</li>
+                <li>✔️ Idéal pour investisseurs ou passionnés d’agriculture</li>
+            </ul>
+            <p><strong>Prix : 2 500 000 FCFA par hectare</strong></p>
+            <p><strong>Contact : +228 92 47 00 75</strong></p>
+            <a class="btn-whatsapp" href="https://wa.me/22892470075?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20les%20plantations%20de%20tecks%20%C3%A0%20Kintikop%C3%A9.%20Merci%20de%20me%20donner%20plus%20d'informations." target="_blank">Nous contacter sur WhatsApp</a>
+        </div>
+    </section>
+    <footer>
+        &copy; 2025 Light Realty - Tous droits réservés.
+    </footer>
 </body>
 </html>
