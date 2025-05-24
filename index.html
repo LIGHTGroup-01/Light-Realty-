@@ -2,71 +2,75 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Light Realty</title>
-    <style>
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; }
-        header, footer { background: #222; color: white; padding: 20px 0; text-align: center; }
-        nav { background: #444; display: flex; justify-content: center; }
-        nav a { color: white; text-decoration: none; padding: 15px 20px; display: block; }
-        nav a:hover { background: #666; }
-        section { padding: 40px 20px; max-width: 1000px; margin: auto; }
-        h2 { color: #1a1a1a; }
-        .annonce { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px #ccc; margin-top: 20px; }
-        .btn-whatsapp { display: inline-block; background: #25D366; color: white; padding: 12px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; margin-top: 10px; }
-        .contact { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px #ccc; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Light Realty</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f2f2f2; color: #333; line-height: 1.6; }
+    header { background: linear-gradient(to right, #222, #444); color: white; padding: 40px 0; text-align: center; }
+    nav { background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); display: flex; justify-content: center; position: sticky; top: 0; z-index: 1000; }
+    nav a { color: #333; text-decoration: none; padding: 15px 25px; display: inline-block; transition: background 0.3s; }
+    nav a:hover { background: #f0f0f0; }
+    section { padding: 50px 20px; max-width: 1100px; margin: auto; }
+    h2 { color: #1a1a1a; margin-bottom: 15px; }
+    p, li { font-size: 1.1rem; }
+    .annonce, .contact { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 15px rgba(0,0,0,0.05); margin-top: 20px; transition: transform 0.3s ease; }
+    .annonce:hover { transform: scale(1.01); }
+    .btn-whatsapp { background: #25D366; color: white; padding: 12px 22px; border-radius: 6px; text-decoration: none; display: inline-block; margin-top: 15px; font-weight: bold; }
+    footer { background: #222; color: white; text-align: center; padding: 25px 0; margin-top: 40px; }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Bienvenue chez Light Realty</h1>
-        <p>Votre partenaire immobilier de confiance au Togo</p>
-    </header>
-    <nav>
-        <a href="#accueil">Accueil</a>
-        <a href="#apropos">À propos</a>
-        <a href="#annonces">Annonces</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  <header>
+    <h1>Bienvenue chez Light Realty</h1>
+    <p>Votre partenaire immobilier de confiance au Togo</p>
+  </header>
 
-    <section id="accueil">
-        <h2>Accueil</h2>
-        <p>Light Realty est une division de LIGHT Group spécialisée dans l’immobilier, l’achat, la vente, la location et la promotion de biens fonciers et immobiliers.</p>
-    </section>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#apropos">À propos</a>
+    <a href="#annonces">Annonces</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <section id="apropos">
-        <h2>À propos</h2>
-        <p>Notre mission est d'offrir des services immobiliers fiables, transparents et accessibles. Avec Light Realty, vous avez l’assurance d’un accompagnement professionnel, de la recherche de terrains à la signature de vos documents.</p>
-    </section>
+  <section id="accueil">
+    <h2>Accueil</h2>
+    <p>Light Realty est une division de LIGHT Group spécialisée dans l’immobilier, l’achat, la vente, la location et la promotion de biens fonciers et immobiliers. Avec nous, trouvez votre espace idéal, en toute sérénité.</p>
+  </section>
 
-    <section id="annonces">
-        <h2>Nos annonces</h2>
-        <div class="annonce">
-            <h3>À VENDRE : Plantations de Tecks à Kintikopé (Notsè)</h3>
-            <p>De belles plantations de tecks s’étendant sur plusieurs hectares, situées dans la localité de Kintikopé, près de Notsè.</p>
-            <ul>
-                <li>✔️ Plantation mature avec un excellent rendement</li>
-                <li>✔️ Sol fertile, bien entretenu</li>
-                <li>✔️ Idéal pour investisseurs ou passionnés d’agriculture</li>
-            </ul>
-            <p><strong>Prix : 2 500 000 FCFA par hectare</strong></p>
-            <p><strong>Contact : +228 92 47 00 75</strong></p>
-            <a class="btn-whatsapp" href="https://wa.me/22892470075?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20les%20plantations%20de%20tecks%20%C3%A0%20Kintikop%C3%A9.%20Merci%20de%20me%20donner%20plus%20d'informations." target="_blank">Contactez-nous sur WhatsApp</a>
-        </div>
-    </section>
+  <section id="apropos">
+    <h2>À propos</h2>
+    <p>Notre mission est d'offrir des services immobiliers fiables, transparents et accessibles. Nous accompagnons nos clients à chaque étape de leur projet, du conseil à la signature finale, pour des transactions sécurisées et réussies.</p>
+  </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact">
-            <p><strong>Téléphone :</strong> +228 92 47 00 75</p>
-            <p><strong>Email :</strong> lightgroup.tg@gmail.com</p>
-            <p><strong>WhatsApp :</strong> <a href="https://wa.me/22892470075" target="_blank">Discuter</a></p>
-        </div>
-    </section>
+  <section id="annonces">
+    <h2>Nos annonces</h2>
+    <div class="annonce">
+      <h3>À VENDRE : Plantations de Tecks à Kintikopé (Notsè)</h3>
+      <p>De magnifiques plantations de tecks, situées dans la localité de Kintikopé près de Notsè, sont mises en vente. Une opportunité à ne pas manquer pour les investisseurs et passionnés d’agriculture !</p>
+      <ul>
+        <li>✔️ Plantation mature avec un excellent rendement</li>
+        <li>✔️ Sol fertile, bien entretenu</li>
+        <li>✔️ Cadre naturel favorable à l’exploitation</li>
+      </ul>
+      <p><strong>Prix : 2 500 000 FCFA par hectare</strong></p>
+      <p><strong>Contact : +228 92 47 00 75</strong></p>
+      <a class="btn-whatsapp" href="https://wa.me/22892470075?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20les%20plantations%20de%20tecks%20%C3%A0%20Kintikop%C3%A9.%20Merci%20de%20me%20donner%20plus%20d'informations." target="_blank">Discuter sur WhatsApp</a>
+    </div>
+  </section>
 
-    <footer>
-        &copy; 2025 Light Realty – Une division de LIGHT Group. Tous droits réservés.
-    </footer>
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <p><strong>Téléphone :</strong> +228 92 47 00 75</p>
+      <p><strong>Email :</strong> lightgroup.tg@gmail.com</p>
+      <p><strong>WhatsApp :</strong> <a href="https://wa.me/22892470075" target="_blank">Discuter maintenant</a></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Light Realty – Une division de LIGHT Group. Tous droits réservés.
+  </footer>
 </body>
 </html>
