@@ -4,27 +4,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Light Realty</title>
+  <title>Light Realty | Agence Immobilière au Togo</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Segoe UI', sans-serif; background: #f2f2f2; color: #333; line-height: 1.6; }
-    header { background: linear-gradient(to right, #222, #444); color: white; padding: 40px 0; text-align: center; }
-    nav { background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); display: flex; justify-content: center; position: sticky; top: 0; z-index: 1000; }
-    nav a { color: #333; text-decoration: none; padding: 15px 25px; display: inline-block; transition: background 0.3s; }
-    nav a:hover { background: #f0f0f0; }
-    section { padding: 50px 20px; max-width: 1100px; margin: auto; }
-    h2 { color: #1a1a1a; margin-bottom: 15px; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f9f9f9; color: #333; line-height: 1.6; }
+    header { background: url('https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat; color: white; text-align: center; padding: 100px 20px; }
+    header h1 { font-size: 3em; margin-bottom: 15px; }
+    header p { font-size: 1.3em; }
+
+    nav { background: white; display: flex; justify-content: center; padding: 15px 0; position: sticky; top: 0; z-index: 999; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+    nav a { color: #333; text-decoration: none; margin: 0 20px; font-weight: 500; padding-bottom: 5px; border-bottom: 2px solid transparent; }
+    nav a:hover { border-color: #007bff; }
+
+    section { max-width: 1100px; margin: auto; padding: 60px 20px; }
+    h2 { font-size: 2.2em; margin-bottom: 20px; color: #1a1a1a; }
     p, li { font-size: 1.1rem; }
-    .annonce, .contact { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 15px rgba(0,0,0,0.05); margin-top: 20px; transition: transform 0.3s ease; }
-    .annonce:hover { transform: scale(1.01); }
+
+    .card { background: white; border-radius: 10px; padding: 30px; box-shadow: 0 2px 20px rgba(0,0,0,0.05); margin-bottom: 40px; }
     .btn-whatsapp { background: #25D366; color: white; padding: 12px 22px; border-radius: 6px; text-decoration: none; display: inline-block; margin-top: 15px; font-weight: bold; }
-    footer { background: #222; color: white; text-align: center; padding: 25px 0; margin-top: 40px; }
+
+    footer { background: #111; color: white; text-align: center; padding: 40px 20px; font-size: 0.95em; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Bienvenue chez Light Realty</h1>
-    <p>Votre partenaire immobilier de confiance au Togo</p>
+    <h1>Light Realty</h1>
+    <p>Expertise immobilière fiable et professionnelle au Togo</p>
   </header>
 
   <nav>
@@ -35,34 +40,39 @@
   </nav>
 
   <section id="accueil">
-    <h2>Accueil</h2>
-    <p>Light Realty est une division de LIGHT Group spécialisée dans l’immobilier, l’achat, la vente, la location et la promotion de biens fonciers et immobiliers. Avec nous, trouvez votre espace idéal, en toute sérénité.</p>
+    <h2>Bienvenue chez Light Realty</h2>
+    <div class="card">
+      <p>Light Realty est la division immobilière du groupe LIGHT Group, spécialisée dans la vente, l’achat, la location et la promotion immobilière. Nous mettons à votre disposition une équipe dynamique, expérimentée et à l’écoute de vos besoins pour faire de votre projet une réussite.</p>
+    </div>
   </section>
 
   <section id="apropos">
-    <h2>À propos</h2>
-    <p>Notre mission est d'offrir des services immobiliers fiables, transparents et accessibles. Nous accompagnons nos clients à chaque étape de leur projet, du conseil à la signature finale, pour des transactions sécurisées et réussies.</p>
+    <h2>À propos de nous</h2>
+    <div class="card">
+      <p>Nous offrons des services fiables et transparents dans le secteur immobilier. De l’évaluation au conseil, en passant par la négociation, Light Realty vous accompagne à chaque étape. Avec un réseau étendu de partenaires et une connaissance approfondie du marché local, nous faisons de votre satisfaction notre priorité.</p>
+    </div>
   </section>
 
   <section id="annonces">
     <h2>Nos annonces</h2>
-    <div class="annonce">
+    <div class="card">
       <h3>À VENDRE : Plantations de Tecks à Kintikopé (Notsè)</h3>
-      <p>De magnifiques plantations de tecks, situées dans la localité de Kintikopé près de Notsè, sont mises en vente. Une opportunité à ne pas manquer pour les investisseurs et passionnés d’agriculture !</p>
+      <p>Opportunité exceptionnelle d’investissement dans l’agriculture : de vastes plantations de tecks prêtes à l’exploitation.</p>
       <ul>
-        <li>✔️ Plantation mature avec un excellent rendement</li>
-        <li>✔️ Sol fertile, bien entretenu</li>
-        <li>✔️ Cadre naturel favorable à l’exploitation</li>
+        <li>✔️ Plantations matures et productives</li>
+        <li>✔️ Environnement propice et sol fertile</li>
+        <li>✔️ Bien entretenues, accessibles et titrées</li>
       </ul>
-      <p><strong>Prix : 2 500 000 FCFA par hectare</strong></p>
+      <p><strong>Prix : 2 500 000 FCFA / hectare</strong></p>
       <p><strong>Contact : +228 92 47 00 75</strong></p>
-      <a class="btn-whatsapp" href="https://wa.me/22892470075?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20les%20plantations%20de%20tecks%20%C3%A0%20Kintikop%C3%A9.%20Merci%20de%20me%20donner%20plus%20d'informations." target="_blank">Discuter sur WhatsApp</a>
+      <a class="btn-whatsapp" href="https://wa.me/22892470075?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20les%20plantations%20de%20tecks%20%C3%A0%20Kintikop%C3%A9.%20Merci%20de%20me%20donner%20plus%20d'informations." target="_blank">Contact WhatsApp</a>
     </div>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <div class="contact">
+    <div class="card">
+      <p><strong>Adresse :</strong> Be-Kpota, Lomé, Togo</p>
       <p><strong>Téléphone :</strong> +228 92 47 00 75</p>
       <p><strong>Email :</strong> lightgroup.tg@gmail.com</p>
       <p><strong>WhatsApp :</strong> <a href="https://wa.me/22892470075" target="_blank">Discuter maintenant</a></p>
