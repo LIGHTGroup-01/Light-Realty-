@@ -2,85 +2,29 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Light Realty | Agence Immobilière au Togo</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Segoe UI', sans-serif; background: #f9f9f9; color: #333; line-height: 1.6; }
-    header { background: url('https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat; color: white; text-align: center; padding: 100px 20px; }
-    header h1 { font-size: 3em; margin-bottom: 15px; }
-    header p { font-size: 1.3em; }
-
-    nav { background: white; display: flex; justify-content: center; padding: 15px 0; position: sticky; top: 0; z-index: 999; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
-    nav a { color: #333; text-decoration: none; margin: 0 20px; font-weight: 500; padding-bottom: 5px; border-bottom: 2px solid transparent; }
-    nav a:hover { border-color: #007bff; }
-
-    section { max-width: 1100px; margin: auto; padding: 60px 20px; }
-    h2 { font-size: 2.2em; margin-bottom: 20px; color: #1a1a1a; }
-    p, li { font-size: 1.1rem; }
-
-    .card { background: white; border-radius: 10px; padding: 30px; box-shadow: 0 2px 20px rgba(0,0,0,0.05); margin-bottom: 40px; }
-    .btn-whatsapp { background: #25D366; color: white; padding: 12px 22px; border-radius: 6px; text-decoration: none; display: inline-block; margin-top: 15px; font-weight: bold; }
-
-    footer { background: #111; color: white; text-align: center; padding: 40px 20px; font-size: 0.95em; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Light Realty</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Light Realty</h1>
-    <p>Expertise immobilière fiable et professionnelle au Togo</p>
-  </header>
-
-  <nav>
-    <a href="#accueil">Accueil</a>
-    <a href="#apropos">À propos</a>
-    <a href="#annonces">Annonces</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="accueil">
-    <h2>Bienvenue chez Light Realty</h2>
-    <div class="card">
-      <p>Light Realty est la division immobilière du groupe LIGHT Group, spécialisée dans la vente, l’achat, la location et la promotion immobilière. Nous mettons à votre disposition une équipe dynamique, expérimentée et à l’écoute de vos besoins pour faire de votre projet une réussite.</p>
-    </div>
-  </section>
-
-  <section id="apropos">
-    <h2>À propos de nous</h2>
-    <div class="card">
-      <p>Nous offrons des services fiables et transparents dans le secteur immobilier. De l’évaluation au conseil, en passant par la négociation, Light Realty vous accompagne à chaque étape. Avec un réseau étendu de partenaires et une connaissance approfondie du marché local, nous faisons de votre satisfaction notre priorité.</p>
-    </div>
-  </section>
-
-  <section id="annonces">
-    <h2>Nos annonces</h2>
-    <div class="card">
-      <h3>À VENDRE : Plantations de Tecks à Kintikopé (Notsè)</h3>
-      <p>Opportunité exceptionnelle d’investissement dans l’agriculture : de vastes plantations de tecks prêtes à l’exploitation.</p>
+    <img src="images/logo.png" alt="Logo Light Realty" class="logo">
+    <nav>
       <ul>
-        <li>✔️ Plantations matures et productives</li>
-        <li>✔️ Environnement propice et sol fertile</li>
-        <li>✔️ Bien entretenues, accessibles et titrées</li>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="annonces.html">Annonces</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-      <p><strong>Prix : 2 500 000 FCFA / hectare</strong></p>
-      <p><strong>Contact : +228 92 47 00 75</strong></p>
-      <a class="btn-whatsapp" href="https://wa.me/22892470075?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20les%20plantations%20de%20tecks%20%C3%A0%20Kintikop%C3%A9.%20Merci%20de%20me%20donner%20plus%20d'informations." target="_blank">Contact WhatsApp</a>
-    </div>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>Bienvenue chez Light Realty</h1>
+    <p>Votre agence de confiance pour l'immobilier au Togo.</p>
+    <a href="https://wa.me/22892470075?text=Bonjour%2C%20je%20souhaite%20avoir%20plus%20d'informations%20sur%20vos%20annonces%20immobili%C3%A8res." class="whatsapp-btn">Nous contacter sur WhatsApp</a>
   </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="card">
-      <p><strong>Adresse :</strong> Be-Kpota, Lomé, Togo</p>
-      <p><strong>Téléphone :</strong> +228 92 47 00 75</p>
-      <p><strong>Email :</strong> lightgroup.tg@gmail.com</p>
-      <p><strong>WhatsApp :</strong> <a href="https://wa.me/22892470075" target="_blank">Discuter maintenant</a></p>
-    </div>
-  </section>
-
   <footer>
-    &copy; 2025 Light Realty – Une division de LIGHT Group. Tous droits réservés.
+    <p>© 2025 Light Realty - Tous droits réservés</p>
   </footer>
 </body>
 </html>
