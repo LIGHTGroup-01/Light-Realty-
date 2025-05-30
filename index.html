@@ -2,72 +2,73 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Light Realty</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light Realty - L'immobilier en toute lumière</title>
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
   <script defer src="js/script.js"></script>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <img src="images/logo.png" alt="Light Realty" class="logo">
-      <nav>
-        <ul id="nav-links">
-          <li><a href="#accueil">Accueil</a></li>
-          <li><a href="#annonces">Annonces</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div id="menu-toggle" class="hamburger"><i class="fas fa-bars"></i></div>
-      </nav>
-    </div>
-  </header>
 
-  <section id="accueil" class="hero">
-    <div class="hero-content">
-      <h1>Bienvenue chez Light Realty</h1>
-      <p>Des biens immobiliers à votre portée au Togo</p>
-      <a href="https://wa.me/22892470075" class="btn">Contact WhatsApp</a>
-    </div>
-  </section>
+<header>
+  <div class="logo">Light Realty</div>
+  <nav>
+    <ul>
+      <li><a href="#">Biens</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <section id="annonces" class="cards">
-    <h2>Nos annonces</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="images/teck1.jpg" alt="Tecks à vendre" />
-        <h3>Plantations de Tecks</h3>
-        <p>Kintikopé - 2 500 000 FCFA/ha</p>
-        <a href="https://wa.me/22892470075" class="btn btn-small">En savoir +</a>
-      </div>
-      <div class="card">
-        <img src="images/terrain.jpg" alt="Terrain résidentiel" />
-        <h3>Terrain résidentiel</h3>
-        <p>Lomé - 8 000 000 FCFA</p>
-        <a href="#" class="btn btn-small">Voir détail</a>
-      </div>
-    </div>
-  </section>
+<section class="featured-cards">
+  <div class="card"><strong>Villa moderne à Lomé</strong><br>4 chambres, piscine, quartier résidentiel</div>
+  <div class="card"><strong>Appartement centre-ville</strong><br>2 chambres, proche des commodités</div>
+  <div class="card"><strong>Terrain à vendre</strong><br>600 m² viabilisé à Agoè</div>
+</section>
 
-  <section id="contact" class="contact-section">
-    <h2>Contact</h2>
-    <form>
-      <input type="text" placeholder="Votre nom" required>
-      <input type="email" placeholder="Votre e-mail" required>
-      <textarea rows="5" placeholder="Votre message" required></textarea>
-      <button type="submit" class="btn">Envoyer</button>
-    </form>
-    <iframe src="https://maps.google.com/maps?q=nots%C3%A8&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"></iframe>
-  </section>
+<section class="highlight">
+  <h2>🌳 À VENDRE : Magnifiques Plantations de Tecks à Kintikopé (Notsè) 🌳</h2>
+  <p>Nous mettons en vente de belles plantations de tecks s’étendant sur plusieurs hectares.</p>
+  <ul>
+    <li>✔️ Plantation mature avec un excellent rendement</li>
+    <li>✔️ Sol fertile, bien entretenu</li>
+    <li>✔️ Idéal pour investisseurs ou passionnés d’agriculture</li>
+  </ul>
+  <p><strong>💰 Prix : 2 500 000 FCFA par hectare</strong></p>
+  <p>📞 Contact : <a href="tel:+22892470075">+228 92 47 00 75</a></p>
+  <a href="https://wa.me/22892470075" class="btn-whatsapp">Contacter sur WhatsApp</a>
+</section>
 
-  <footer>
-    <p>© 2025 Light Realty. Tous droits réservés.</p>
-    <div class="socials">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="https://wa.me/22892470075"><i class="fab fa-whatsapp"></i></a>
-    </div>
-  </footer>
+<section class="why-us">
+  <h2>Pourquoi nous choisir ?</h2>
+  <div class="features">
+    <div><strong>Professionnalisme</strong><p>Transparence et expertise.</p></div>
+    <div><strong>Fiabilité</strong><p>Documents fonciers vérifiés.</p></div>
+    <div><strong>Disponibilité</strong><p>Équipe toujours à l’écoute.</p></div>
+  </div>
+</section>
+
+<section class="contact-form">
+  <h2>Contactez-nous</h2>
+  <form>
+    <input type="text" placeholder="Votre nom" required>
+    <input type="email" placeholder="Votre email" required>
+    <textarea placeholder="Votre message" rows="5" required></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
+</section>
+
+<section class="map">
+  <h2>Nous localiser</h2>
+  <iframe src="https://maps.google.com/maps?q=lom%C3%A9&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+</section>
+
+<footer>
+  <p>© 2025 Light Realty - Une marque de <strong>LIGHT Group SARL</strong></p>
+  <p>Suivez-nous : <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="https://wa.me/22892470075">WhatsApp</a></p>
+</footer>
+
 </body>
 </html>
