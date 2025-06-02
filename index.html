@@ -4,53 +4,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Light Realty</title>
+  <title>Light Realty - L'immobilier en toute lumière</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
 </head>
 <body>
   <header class="top-header">
     <div class="logo">Light Realty</div>
     <nav>
       <ul class="menu">
-        <li><a href="#">Biens</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#offres">Offres</a></li>
+        <li><a href="#pourquoi">Pourquoi nous choisir</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#localisation">Localisation</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="annonces-bar">
-    <div class="annonce-item"><strong>Villa moderne à Lomé</strong><br><small>4 chambres, piscine, quartier résidentiel</small></div>
-    <div class="annonce-item"><strong>Appartement centre-ville</strong><br><small>2 chambres, proche des commodités</small></div>
-    <div class="annonce-item"><strong>Terrain à vendre</strong><br><small>600 m² viabilisé à Agoè</small></div>
-  </section>
-
-  <section class="highlight">
-    <h2>🌳 <strong>À VENDRE : Magnifiques Plantations de Tecks à Kintikopé (Notsè)</strong> 🌳</h2>
-    <p>Nous mettons en vente de belles plantations de tecks s’étendant sur plusieurs hectares.</p>
-    <ul>
-      <li>✔️ Plantation mature avec un excellent rendement</li>
-      <li>✔️ Sol fertile, bien entretenu</li>
-      <li>✔️ Idéal pour investisseurs ou passionnés d’agriculture</li>
-    </ul>
-    <p class="prix">💰 <strong>Prix : <span class="red">2 500 000 FCFA</span> par hectare</strong></p>
-    <p>📞 Contact : <a href="tel:+22892470075">+228 92 47 00 75</a></p>
-    <a href="https://wa.me/22892470075" class="btn-whatsapp">Contacter sur WhatsApp</a>
-  </section>
-
-  <section class="why">
-    <h2>Pourquoi nous choisir ?</h2>
-    <div class="cols">
-      <div><h3>Professionnalisme</h3><p>Nos agents vous accompagnent avec transparence et expertise.</p></div>
-      <div><h3>Fiabilité</h3><p>Nous vérifions tous les documents et titres fonciers.</p></div>
-      <div><h3>Disponibilité</h3><p>Une équipe toujours joignable et prête à vous servir.</p></div>
+  <section id="offres" class="section">
+    <h2>Nos offres & annonces</h2>
+    <div class="offres">
+      <div class="card"><strong>Villa moderne à Lomé</strong><br><small>4 chambres, piscine, quartier résidentiel</small></div>
+      <div class="card"><strong>Appartement centre-ville</strong><br><small>2 chambres, proche des commodités</small></div>
+      <div class="card"><strong>Terrain à vendre</strong><br><small>600 m² viabilisé à Agoè</small></div>
+      <div class="card highlight">
+        <h3>🌳 À VENDRE : Tecks à Kintikopé (Notsè)</h3>
+        <p>✔️ Plantation mature, ✔️ Sol fertile, ✔️ Idéal pour investisseurs</p>
+        <p><strong>Prix : <span class="red">2 500 000 FCFA</span>/hectare</strong></p>
+        <a href="https://wa.me/22892470075" class="btn-whatsapp">Contacter sur WhatsApp</a>
+      </div>
     </div>
   </section>
 
-  <section class="contact">
-    <h2>Contactez-nous</h2>
-    <form>
+  <section id="pourquoi" class="section gray">
+    <h2>Pourquoi nous choisir ?</h2>
+    <div class="cols">
+      <div><h3>Professionnalisme</h3><p>Transparence et expertise.</p></div>
+      <div><h3>Fiabilité</h3><p>Documents et titres vérifiés.</p></div>
+      <div><h3>Disponibilité</h3><p>Équipe toujours joignable.</p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>📞 Téléphone : <a href="tel:+22892470075">+228 92 47 00 75</a></p>
+    <a href="https://wa.me/22892470075" class="btn-whatsapp">Contacter sur WhatsApp</a>
+    <form class="contact-form">
       <input type="text" placeholder="Votre nom" required>
       <input type="email" placeholder="Votre email" required>
       <textarea placeholder="Votre message" rows="5" required></textarea>
@@ -58,13 +56,13 @@
     </form>
   </section>
 
-  <section class="map">
+  <section id="localisation" class="section gray">
     <h2>Nous localiser</h2>
     <iframe src="https://maps.google.com/maps?q=lom%C3%A9&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
   </section>
 
   <footer>
-    <p>© 2025 Light Realty - Une marque de <strong>LIGHT Group SARL</strong></p>
+    <p>© 2025 Light Realty – Une marque de <strong>LIGHT Group SARL</strong></p>
     <p>Suivez-nous : <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="https://wa.me/22892470075">WhatsApp</a></p>
   </footer>
 </body>
