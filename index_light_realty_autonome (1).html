@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Light Realty</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f9f9f9; color: #222; }
+    .top-header { display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; background: #fff; box-shadow: 0 1px 5px rgba(0,0,0,0.1); }
+    .logo { font-size: 1.6em; font-weight: bold; color: #f60; }
+    .menu { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; }
+    .menu a { text-decoration: none; color: #333; font-weight: 500; }
+    .annonces-bar { display: flex; overflow-x: auto; background: #f4f4f4; padding: 10px; gap: 10px; justify-content: space-around; }
+    .annonce-item { min-width: 200px; padding: 5px; background: white; border: 1px solid #ddd; border-radius: 4px; }
+    .highlight { background: #fff9dc; padding: 30px 20px; text-align: center; }
+    .highlight .btn-whatsapp { background: #25D366; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; display: inline-block; margin-top: 10px; }
+    .highlight .prix .red { color: #d00; }
+    .why { text-align: center; padding: 40px 20px; background: #fff; }
+    .cols { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
+    .cols div { max-width: 250px; }
+    .contact { background: #fafafa; padding: 30px 20px; }
+    .contact form { max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 10px; }
+    .contact input, .contact textarea { padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+    .contact button { background: orange; color: white; padding: 12px; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; }
+    .map { padding: 30px 20px; background: #fff; }
+    .map iframe { width: 100%; height: 300px; border: none; }
+    footer { background: #222; color: white; text-align: center; padding: 20px; font-size: 0.9em; }
+    footer a { color: #ffcc00; text-decoration: none; }
+    @media(max-width: 768px) {
+      .cols { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+  <header class="top-header">
+    <div class="logo">Light Realty</div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Biens</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="annonces-bar">
+    <div class="annonce-item"><strong>Villa moderne à Lomé</strong><br><small>4 chambres, piscine, quartier résidentiel</small></div>
+    <div class="annonce-item"><strong>Appartement centre-ville</strong><br><small>2 chambres, proche des commodités</small></div>
+    <div class="annonce-item"><strong>Terrain à vendre</strong><br><small>600 m² viabilisé à Agoè</small></div>
+  </section>
+
+  <section class="highlight">
+    <h2>🌳 <strong>À VENDRE : Magnifiques Plantations de Tecks à Kintikopé (Notsè)</strong> 🌳</h2>
+    <p>Nous mettons en vente de belles plantations de tecks s’étendant sur plusieurs hectares.</p>
+    <ul>
+      <li>✔️ Plantation mature avec un excellent rendement</li>
+      <li>✔️ Sol fertile, bien entretenu</li>
+      <li>✔️ Idéal pour investisseurs ou passionnés d’agriculture</li>
+    </ul>
+    <p class="prix">💰 <strong>Prix : <span class="red">2 500 000 FCFA</span> par hectare</strong></p>
+    <p>📞 Contact : <a href="tel:+22892470075">+228 92 47 00 75</a></p>
+    <a href="https://wa.me/22892470075" class="btn-whatsapp">Contacter sur WhatsApp</a>
+  </section>
+
+  <section class="why">
+    <h2>Pourquoi nous choisir ?</h2>
+    <div class="cols">
+      <div><h3>Professionnalisme</h3><p>Nos agents vous accompagnent avec transparence et expertise.</p></div>
+      <div><h3>Fiabilité</h3><p>Nous vérifions tous les documents et titres fonciers.</p></div>
+      <div><h3>Disponibilité</h3><p>Une équipe toujours joignable et prête à vous servir.</p></div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contactez-nous</h2>
+    <form>
+      <input type="text" placeholder="Votre nom" required>
+      <input type="email" placeholder="Votre email" required>
+      <textarea placeholder="Votre message" rows="5" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <section class="map">
+    <h2>Nous localiser</h2>
+    <iframe src="https://maps.google.com/maps?q=lom%C3%A9&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+  </section>
+
+  <footer>
+    <p>© 2025 Light Realty - Une marque de <strong>LIGHT Group SARL</strong></p>
+    <p>Suivez-nous : <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="https://wa.me/22892470075">WhatsApp</a></p>
+  </footer>
+</body>
+</html>
